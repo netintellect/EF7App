@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69CFD1FE-291D-4EF1-8233-3783B0095747}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiceCruiser.Model.Entities.Core</RootNamespace>
+    <AssemblyName>ServiceCruiser.Model.Entities.Core</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile47</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>12.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dev|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Dev\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Qa|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Qa\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SeedingBuild|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\SeedingBuild\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+    <EmbeddedResource Include="Resources\Translations.nl.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Translations.nl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Translations.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Translations.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utilities\TimePeriod\Strings.resx">
+      <DependentUpon>Strings.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\DeletePriorityAttribute.cs" />
+    <Compile Include="Attributes\AggregationAttribute.cs" />
+    <Compile Include="Attributes\DefaultTextAttribute.cs" />
+    <Compile Include="Attributes\HandleOnNestingAttribute.cs" />
+    <Compile Include="Attributes\IgnoreOnCloneAttribute.cs" />
+    <Compile Include="Attributes\IgnoreOnLoadAttribute.cs" />
+    <Compile Include="Attributes\IgnoreOnMapAttribute.cs" />
+    <Compile Include="Attributes\IgnoreOnSaveAttribute.cs" />
+    <Compile Include="Attributes\KeyAttribute.cs" />
+    <Compile Include="Attributes\NullValueAttribute.cs" />
+    <Compile Include="Attributes\RowVersionAttribute.cs" />
+    <Compile Include="Attributes\ValidationPropertyAttribute.cs" />
+    <Compile Include="AuditEntity.cs" />
+    <Compile Include="AuditInfo.cs" />
+    <Compile Include="Data\IBaseService.cs" />
+    <Compile Include="Data\InclusionDataFilter.cs" />
+    <Compile Include="IAuditEntity.cs" />
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="Data\DataFilter.cs" />
+    <Compile Include="Data\DataListResult.cs" />
+    <Compile Include="Data\DataSaveResult.cs" />
+    <Compile Include="Exceptions\BusinessException.cs" />
+    <Compile Include="Exceptions\DatabaseException.cs" />
+    <Compile Include="Exceptions\GeneralException.cs" />
+    <Compile Include="Exceptions\PermissionException.cs" />
+    <Compile Include="Extensibility\EnumerableExtensions.cs" />
+    <Compile Include="Extensibility\QueryableExtensions.cs" />
+    <Compile Include="Extensibility\PropertyInfoExtensions.cs" />
+    <Compile Include="Extensibility\TypeExtensions.cs" />
+    <Compile Include="Data\LogicalOperatorType.cs" />
+    <Compile Include="IAuditInfo.cs" />
+    <Compile Include="Infrastructure\AppInfo.cs" />
+    <Compile Include="Infrastructure\RunEnvironmentType.cs" />
+    <Compile Include="Infrastructure\Version\AppVersion.cs" />
+    <Compile Include="Infrastructure\CodeGroup.cs" />
+    <Compile Include="Infrastructure\CodeGroupTranslation.cs" />
+    <Compile Include="Infrastructure\CodeGroupType.cs" />
+    <Compile Include="Infrastructure\Country.cs" />
+    <Compile Include="Infrastructure\EnvironmentType.cs" />
+    <Compile Include="Infrastructure\Language.cs" />
+    <Compile Include="Infrastructure\Log.cs" />
+    <Compile Include="Infrastructure\Version\ModuleVersion.cs" />
+    <Compile Include="Infrastructure\Version\ProductVersion.cs" />
+    <Compile Include="Infrastructure\SeedingConfigType.cs" />
+    <Compile Include="IValidate.cs" />
+    <Compile Include="Linq\ReplaceVisitor.cs" />
+    <Compile Include="NotificationObject.cs" />
+    <Compile Include="Data\Paging.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IBaseEntityRepository.cs" />
+    <Compile Include="Repositories\IRepositoryFinder.cs" />
+    <Compile Include="Rest\Resources.cs" />
+    <Compile Include="Resources\Translations.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Translations.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Translations.nl.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Translations.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SortDirectionType.cs" />
+    <Compile Include="Utilities\StaticFactory.cs" />
+    <Compile Include="Utilities\TimePeriod\AmbiguousMomentException.cs" />
+    <Compile Include="Utilities\TimePeriod\BroadcastCalendarTool.cs" />
+    <Compile Include="Utilities\TimePeriod\BroadcastMonth.cs" />
+    <Compile Include="Utilities\TimePeriod\BroadcastWeek.cs" />
+    <Compile Include="Utilities\TimePeriod\BroadcastYear.cs" />
+    <Compile Include="Utilities\TimePeriod\CalendarDateAdd.cs" />
+    <Compile Include="Utilities\TimePeriod\CalendarDateDiff.cs" />
+    <Compile Include="Utilities\TimePeriod\CalendarNameType.cs" />
+    <Compile Include="Utilities\TimePeriod\CalendarPeriodCollector.cs" />
+    <Compile Include="Utilities\TimePeriod\CalendarPeriodCollectorContext.cs" />
+    <Compile Include="Utilities\TimePeriod\CalendarPeriodCollectorFilter.cs" />
+    <Compile Include="Utilities\TimePeriod\CalendarTimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\CalendarVisitor.cs" />
+    <Compile Include="Utilities\TimePeriod\CalendarVisitorFilter.cs" />
+    <Compile Include="Utilities\TimePeriod\ClockProxy.cs" />
+    <Compile Include="Utilities\TimePeriod\Date.cs" />
+    <Compile Include="Utilities\TimePeriod\DateAdd.cs" />
+    <Compile Include="Utilities\TimePeriod\DateDiff.cs" />
+    <Compile Include="Utilities\TimePeriod\DateTimeSet.cs" />
+    <Compile Include="Utilities\TimePeriod\Day.cs" />
+    <Compile Include="Utilities\TimePeriod\DayHourRange.cs" />
+    <Compile Include="Utilities\TimePeriod\DayRange.cs" />
+    <Compile Include="Utilities\TimePeriod\Days.cs" />
+    <Compile Include="Utilities\TimePeriod\DaySeeker.cs" />
+    <Compile Include="Utilities\TimePeriod\DaySeekerContext.cs" />
+    <Compile Include="Utilities\TimePeriod\DayTimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\Duration.cs" />
+    <Compile Include="Utilities\TimePeriod\DurationCalculator.cs" />
+    <Compile Include="Utilities\TimePeriod\DurationFormatType.cs" />
+    <Compile Include="Utilities\TimePeriod\DurationProvider.cs" />
+    <Compile Include="Utilities\TimePeriod\FiscalCalendarTool.cs" />
+    <Compile Include="Utilities\TimePeriod\FiscalQuarterGrouping.cs" />
+    <Compile Include="Utilities\TimePeriod\FiscalYearAlignment.cs" />
+    <Compile Include="Utilities\TimePeriod\Halfyear.cs" />
+    <Compile Include="Utilities\TimePeriod\Halfyears.cs" />
+    <Compile Include="Utilities\TimePeriod\HalfyearTimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\HashTool.cs" />
+    <Compile Include="Utilities\TimePeriod\Hour.cs" />
+    <Compile Include="Utilities\TimePeriod\HourRange.cs" />
+    <Compile Include="Utilities\TimePeriod\Hours.cs" />
+    <Compile Include="Utilities\TimePeriod\HourTimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\ICalendarPeriodCollectorFilter.cs" />
+    <Compile Include="Utilities\TimePeriod\ICalendarTimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\ICalendarVisitorContext.cs" />
+    <Compile Include="Utilities\TimePeriod\ICalendarVisitorFilter.cs" />
+    <Compile Include="Utilities\TimePeriod\IClock.cs" />
+    <Compile Include="Utilities\TimePeriod\IDateTimeSet.cs" />
+    <Compile Include="Utilities\TimePeriod\IDurationProvider.cs" />
+    <Compile Include="Utilities\TimePeriod\IntervalEdge.cs" />
+    <Compile Include="Utilities\TimePeriod\InvalidMomentException.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimeBlock.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimeCalendar.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimeFormatter.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimeInterval.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimeLine.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimeLineMoment.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimeLineMomentCollection.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimePeriod.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimePeriodChain.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimePeriodCollection.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimePeriodComparer.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimePeriodContainer.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimePeriodMapper.cs" />
+    <Compile Include="Utilities\TimePeriod\ITimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\ListSortDirection.cs" />
+    <Compile Include="Utilities\TimePeriod\Minute.cs" />
+    <Compile Include="Utilities\TimePeriod\Minutes.cs" />
+    <Compile Include="Utilities\TimePeriod\MinuteTimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\Month.cs" />
+    <Compile Include="Utilities\TimePeriod\MonthRange.cs" />
+    <Compile Include="Utilities\TimePeriod\Months.cs" />
+    <Compile Include="Utilities\TimePeriod\MonthTimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\Now.cs" />
+    <Compile Include="Utilities\TimePeriod\PeriodRelation.cs" />
+    <Compile Include="Utilities\TimePeriod\Quarter.cs" />
+    <Compile Include="Utilities\TimePeriod\Quarters.cs" />
+    <Compile Include="Utilities\TimePeriod\QuarterTimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\SeekBoundaryMode.cs" />
+    <Compile Include="Utilities\TimePeriod\SeekDirection.cs" />
+    <Compile Include="Utilities\TimePeriod\StaticClock.cs" />
+    <Compile Include="Utilities\TimePeriod\Strings.cs" />
+    <Compile Include="Utilities\TimePeriod\SystemClock.cs" />
+    <Compile Include="Utilities\TimePeriod\Time.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeBlock.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeCalendar.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeCalendarConfig.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeCompare.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeFormatter.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeGapCalculator.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeInterval.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeLine.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeLineMoment.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeLineMomentCollection.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeLinePeriodEvaluator.cs" />
+    <Compile Include="Utilities\TimePeriod\TimePeriodCalc.cs" />
+    <Compile Include="Utilities\TimePeriod\TimePeriodChain.cs" />
+    <Compile Include="Utilities\TimePeriod\TimePeriodCollection.cs" />
+    <Compile Include="Utilities\TimePeriod\TimePeriodCombiner.cs" />
+    <Compile Include="Utilities\TimePeriod\TimePeriodDurationComparer.cs" />
+    <Compile Include="Utilities\TimePeriod\TimePeriodEndComparer.cs" />
+    <Compile Include="Utilities\TimePeriod\TimePeriodIntersector.cs" />
+    <Compile Include="Utilities\TimePeriod\TimePeriodReversComparer.cs" />
+    <Compile Include="Utilities\TimePeriod\TimePeriodStartComparer.cs" />
+    <Compile Include="Utilities\TimePeriod\TimePeriodSubtractor.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeSpec.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeTool.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeTrim.cs" />
+    <Compile Include="Utilities\TimePeriod\TimeZoneDurationProvider.cs" />
+    <Compile Include="Utilities\TimePeriod\Week.cs" />
+    <Compile Include="Utilities\TimePeriod\Weeks.cs" />
+    <Compile Include="Utilities\TimePeriod\WeekTimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\Year.cs" />
+    <Compile Include="Utilities\TimePeriod\YearHalfyear.cs" />
+    <Compile Include="Utilities\TimePeriod\YearMonth.cs" />
+    <Compile Include="Utilities\TimePeriod\YearQuarter.cs" />
+    <Compile Include="Utilities\TimePeriod\Years.cs" />
+    <Compile Include="Utilities\TimePeriod\YearTimeRange.cs" />
+    <Compile Include="Utilities\TimePeriod\YearType.cs" />
+    <Compile Include="Utilities\TimePeriod\YearWeekType.cs" />
+    <Compile Include="ValidatedEntity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceCruiser.Model.Validations.Core\ServiceCruiser.Model.Validations.Core.csproj">
+      <Project>{e99b94e4-cde7-49c5-9c97-04b3bcb2d82a}</Project>
+      <Name>ServiceCruiser.Model.Validations.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+ 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

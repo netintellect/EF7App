@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CapacityCycleConfigurationRemarkRequired" xml:space="preserve">
+    <value>The remark is required.</value>
+  </data>
+  <data name="CapacityCycleConfigurationValidFrom" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="VisitPlannedStart" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="CapacityCycleConfigurationValidFromAfterTo" xml:space="preserve">
+    <value>The end date should be set after the start date.</value>
+  </data>
+  <data name="CapacityCycleConfigurationValidFromRequired" xml:space="preserve">
+    <value>The start date is required.</value>
+  </data>
+  <data name="CapacityCycleConfigurationValidTo" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="CapacityCycleConfigurationValidToRequired" xml:space="preserve">
+    <value>The end date is required.</value>
+  </data>
+  <data name="ContractModelConfigurationsInvalid" xml:space="preserve">
+    <value>The sequence of configurations contains overlaps.</value>
+  </data>
+  <data name="ContractModelName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ContractModelNameRequired" xml:space="preserve">
+    <value>The name is required.</value>
+  </data>
+  <data name="ContractModelValidFrom" xml:space="preserve">
+    <value>Start date</value>
+  </data>
+  <data name="ContractModelValidTo" xml:space="preserve">
+    <value>End date</value>
+  </data>
+  <data name="RemarkDisplayAudit" xml:space="preserve">
+    <value>Entered by {0} {1} on {2} at {3}</value>
+  </data>
+  <data name="HistoryDisplayAudit" xml:space="preserve">
+    <value>Entered by {0} {1} on {2} at {3}</value>
+  </data>
+  <data name="CallAgentRemarkDisplayAudit1" xml:space="preserve">
+    <value>at {0} on {1}</value>
+  </data>
+  <data name="CallAgentRemarkDisplayAudit2" xml:space="preserve">
+    <value>by {0} {1}</value>
+  </data>
+  <data name="RemarkText" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="RemarkTextRequired" xml:space="preserve">
+    <value>The text of the remark is required.</value>
+  </data>
+  <data name="RemarkType" xml:space="preserve">
+    <value>Remark type</value>
+  </data>
+  <data name="RemarkTypeRequired" xml:space="preserve">
+    <value>The type of the remark is required.</value>
+  </data>
+  <data name="ServiceOrderDateRequired" xml:space="preserve">
+    <value>The order date is required.</value>
+  </data>
+  <data name="ServiceOrderDisplayString1" xml:space="preserve">
+    <value>Service order {0} with status {1} </value>
+  </data>
+  <data name="ServiceOrderDisplayString2" xml:space="preserve">
+    <value>ordered on {0}</value>
+  </data>
+  <data name="WorkOrderDisplayString1" xml:space="preserve">
+    <value>Work order {0} with status {1} </value>
+  </data>
+  <data name="WorkOrderDisplayString2" xml:space="preserve">
+    <value>based upon specification {0}.</value>
+  </data>
+  <data name="VisitDisplayString1" xml:space="preserve">
+    <value>Visit {0} [{1}] planned at {2}.</value>
+  </data>
+  <data name="VisitDisplayString2" xml:space="preserve">
+    <value>Executed by {0} at {1}.</value>
+  </data>
+  <data name="ServiceOrderEaliestDateRequired" xml:space="preserve">
+    <value>The earliest start date is required.</value>
+  </data>
+  <data name="ServiceOrderExternalRef" xml:space="preserve">
+    <value>External reference [service order]</value>
+  </data>
+  <data name="ServiceOrderExternalRefRequired" xml:space="preserve">
+    <value>The external reference is required.</value>
+  </data>
+  <data name="ServiceOrderOrderDate" xml:space="preserve">
+    <value>Order date [service order]</value>
+  </data>
+  <data name="ServiceOrderStartBeforeOrderDate" xml:space="preserve">
+    <value>The earliest start date shoud be set after the order date.</value>
+  </data>
+  <data name="ServiceOrderStartNoEarlierThan" xml:space="preserve">
+    <value>Earliest start date</value>
+  </data>
+  <data name="TechnicianAddressTypeHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="TechnicianAddressTypeFriend" xml:space="preserve">
+    <value>Friend</value>
+  </data>
+  <data name="TechnicianAddressTypeHoliday" xml:space="preserve">
+    <value>Holiday</value>
+  </data>
+  <data name="SchedulingModeUrgent" xml:space="preserve">
+    <value>Urgent</value>
+  </data>
+  <data name="SchedulingModeNormal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="SchedulingModePool" xml:space="preserve">
+    <value>Pool</value>
+  </data>
+  <data name="SchedulingModeCollect" xml:space="preserve">
+    <value>Collect</value>
+  </data>
+  <data name="WorkOrderExternalRef" xml:space="preserve">
+    <value>External reference [work order]</value>
+  </data>
+  <data name="WorkOrderId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="WorkOrderLocationId" xml:space="preserve">
+    <value>Location id</value>
+  </data>
+  <data name="WorkOrderPriority" xml:space="preserve">
+    <value>Priority [work order]</value>
+  </data>
+  <data name="WorkOrderServiceOrderId" xml:space="preserve">
+    <value>Order id</value>
+  </data>
+  <data name="WorkOrderSpecificationId" xml:space="preserve">
+    <value>Specification id</value>
+  </data>
+  <data name="WorkOrderStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="SchedulingWithAppointmentCaption" xml:space="preserve">
+    <value>with appointment</value>
+  </data>
+  <data name="SchedulingWithoutAppointmentCaption" xml:space="preserve">
+    <value>without appointment</value>
+  </data>
+  <data name="AddressCity" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="AddressCityRequired" xml:space="preserve">
+    <value>The city is required.</value>
+  </data>
+  <data name="AddressCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="AddressCountryRequired" xml:space="preserve">
+    <value>The country is required.</value>
+  </data>
+  <data name="AddressHouseNumber" xml:space="preserve">
+    <value>House number</value>
+  </data>
+  <data name="AddressHouseNumberRequired" xml:space="preserve">
+    <value>The house number is required.</value>
+  </data>
+  <data name="AddressPostalCode" xml:space="preserve">
+    <value>Postal code</value>
+  </data>
+  <data name="AddressPostalCodeRequired" xml:space="preserve">
+    <value>The postal code is required.</value>
+  </data>
+  <data name="AddressPostBox" xml:space="preserve">
+    <value>Post box</value>
+  </data>
+  <data name="AddressStreet" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="AddressStreetRequired" xml:space="preserve">
+    <value>The street is required.</value>
+  </data>
+  <data name="ContactFirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="ContactFirstNameRange" xml:space="preserve">
+    <value>The first name of the contact can contain maximum 150 characters.</value>
+  </data>
+  <data name="ContactFirstNameRequired" xml:space="preserve">
+    <value>The first name of the contact is required.</value>
+  </data>
+  <data name="ContactLastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="ContactLastNameRange" xml:space="preserve">
+    <value>The last name of the contact can contain maximum 150 characters.</value>
+  </data>
+  <data name="ContactLastNameRequired" xml:space="preserve">
+    <value>The last name of the contact is required.</value>
+  </data>
+  <data name="LocationLatitude" xml:space="preserve">
+    <value>Latitude</value>
+  </data>
+  <data name="LocationLatitudeRequired" xml:space="preserve">
+    <value>The latitude of the location is requred.</value>
+  </data>
+  <data name="LocationLongitude" xml:space="preserve">
+    <value>Longitude</value>
+  </data>
+  <data name="LocationLongitureRequired" xml:space="preserve">
+    <value>The longitude of the location is required.</value>
+  </data>
+  <data name="CapacityCycleExecutionStart" xml:space="preserve">
+    <value>ExecutionStart</value>
+  </data>
+  <data name="LocationLatitudeRange" xml:space="preserve">
+    <value>The latitude has to range from 0° to 90°.</value>
+  </data>
+  <data name="LocationLongitudeRange" xml:space="preserve">
+    <value>The longitude has to range from -180° to 180°.</value>
+  </data>
+  <data name="LocationLocationRef" xml:space="preserve">
+    <value>Location reference</value>
+  </data>
+  <data name="UserLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="UserEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="UserFirstName" xml:space="preserve">
+    <value>FirstName</value>
+  </data>
+  <data name="UserLastName" xml:space="preserve">
+    <value>LastName</value>
+  </data>
+  <data name="UserMobilePhone" xml:space="preserve">
+    <value>MobilePhone</value>
+  </data>
+  <data name="UserPasswordHash" xml:space="preserve">
+    <value>PasswordHash</value>
+  </data>
+  <data name="UserPasswordSalt" xml:space="preserve">
+    <value>PasswordSalt</value>
+  </data>
+  <data name="WorkSpecificationCode" xml:space="preserve">
+    <value>Code [work specification]</value>
+  </data>
+  <data name="WorkSpecificationDescription" xml:space="preserve">
+    <value>Description [work specification]</value>
+  </data>
+  <data name="WorkSpecificationId" xml:space="preserve">
+    <value>Id [Work specification]</value>
+  </data>
+  <data name="WorkSpecificationServiceSpecificationId" xml:space="preserve">
+    <value>Service specification [work specification]</value>
+  </data>
+  <data name="WorkSpecificationValidFrom" xml:space="preserve">
+    <value>Valid from [work specification]</value>
+  </data>
+  <data name="WorkSpecificationValidTo" xml:space="preserve">
+    <value>Valid to [work specification]</value>
+  </data>
+  <data name="WorkSpecificationWithAppointment" xml:space="preserve">
+    <value>With appointment [work specification]</value>
+  </data>
+  <data name="WorkSpecificationScheduleMode" xml:space="preserve">
+    <value>Schedule mode [work specification]</value>
+  </data>
+  <data name="WorkOrderExternalRefRequired" xml:space="preserve">
+    <value>The external reference is required.</value>
+  </data>
+  <data name="WorkOrderWorkSpecificationRequired" xml:space="preserve">
+    <value>The work specification is requried.</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CompanyRoleName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CompanyRoleValidFrom" xml:space="preserve">
+    <value>ValidFrom</value>
+  </data>
+  <data name="CompanyRoleValidUntil" xml:space="preserve">
+    <value>ValidUntil</value>
+  </data>
+  <data name="CompanyVAT" xml:space="preserve">
+    <value>VAT</value>
+  </data>
+  <data name="LocationAddressDisplay" xml:space="preserve">
+    <value>Located on {0} {1} {2}, {3} {4}.</value>
+  </data>
+  <data name="LocationCoordinatesDisplay" xml:space="preserve">
+    <value>Located on latitude {0} and longitude {1}.</value>
+  </data>
+  <data name="CapacityRequestHoursRequestedRequired" xml:space="preserve">
+    <value>The hours requested are required.</value>
+  </data>
+  <data name="CapacityRequestRegionRequired" xml:space="preserve">
+    <value>The region is required.</value>
+  </data>
+  <data name="CapacityRequestTechniciansRequestedRequired" xml:space="preserve">
+    <value>The technician requested are required.</value>
+  </data>
+  <data name="CapacityRequestHoursRequested" xml:space="preserve">
+    <value>Hours requested</value>
+  </data>
+  <data name="CapacityRequestTechniciansRequested" xml:space="preserve">
+    <value>Technicians requested</value>
+  </data>
+  <data name="CapacityRequestRegionId" xml:space="preserve">
+    <value>The region is required.</value>
+  </data>
+  <data name="CapacityCycleExecutionOverlap" xml:space="preserve">
+    <value>The execution start date {0} is invalid because it will cause overlapping execution periods.</value>
+  </data>
+  <data name="CapacityCycleNoActiveConfiguration" xml:space="preserve">
+    <value>There is no capacity configuration active on {0}.</value>
+  </data>
+  <data name="CapacityCycleStatusAgreed" xml:space="preserve">
+    <value>Agreed</value>
+  </data>
+  <data name="CapacityCycleStatusFinal" xml:space="preserve">
+    <value>Final</value>
+  </data>
+  <data name="CapacityCycleStatusNew" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="CapacityCycleStatusWaiting" xml:space="preserve">
+    <value>Waiting on agreement</value>
+  </data>
+  <data name="CapacityRequestStatusAgreed" xml:space="preserve">
+    <value>Agreed</value>
+  </data>
+  <data name="CapacityRequestStatusFinal" xml:space="preserve">
+    <value>Final</value>
+  </data>
+  <data name="CapacityRequestStatusNew" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="CapacityRequestStatusWaiting" xml:space="preserve">
+    <value>Waiting on agreement</value>
+  </data>
+  <data name="VisitStatusAborted" xml:space="preserve">
+    <value>Aborted</value>
+  </data>
+  <data name="VisitStatusAccepted" xml:space="preserve">
+    <value>Accepted</value>
+  </data>
+  <data name="VisitStatusCommitted" xml:space="preserve">
+    <value>Committed</value>
+  </data>
+  <data name="VisitStatusEnded" xml:space="preserve">
+    <value>Ended</value>
+  </data>
+  <data name="VisitStatusOnSite" xml:space="preserve">
+    <value>OnSite</value>
+  </data>
+  <data name="VisitStatusTravelling" xml:space="preserve">
+    <value>Travelling</value>
+  </data>
+  <data name="VisitStatusUnallocated" xml:space="preserve">
+    <value>Unallocated</value>
+  </data>
+  <data name="VisitStatusAllocated" xml:space="preserve">
+    <value>Allocated</value>
+  </data>
+  <data name="TaskStatusAborted" xml:space="preserve">
+    <value>Aborted</value>
+  </data>
+  <data name="TaskStatusEnded" xml:space="preserve">
+    <value>Ended</value>
+  </data>
+  <data name="TaskStatusNew" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="RoleTypeCallAgent" xml:space="preserve">
+    <value>Call agent</value>
+  </data>
+  <data name="RoleTypeCapacityRequestor" xml:space="preserve">
+    <value>Capacity requestor</value>
+  </data>
+  <data name="RoleTypeContractingAdmin" xml:space="preserve">
+    <value>Administrator contracting company</value>
+  </data>
+  <data name="RoleTypeContractorAdmin" xml:space="preserve">
+    <value>Administrator contractor</value>
+  </data>
+  <data name="RoleTypeDispatcher" xml:space="preserve">
+    <value>Dispatcher</value>
+  </data>
+  <data name="RoleTypeTechnician" xml:space="preserve">
+    <value>Technician</value>
+  </data>
+  <data name="AssignmentFrom" xml:space="preserve">
+    <value>Start time shift</value>
+  </data>
+  <data name="ShiftFromAfterTo" xml:space="preserve">
+    <value>The end time of a shift should be set after the start time.</value>
+  </data>
+  <data name="ShiftFromRequired" xml:space="preserve">
+    <value>The start time of a shift is required.</value>
+  </data>
+  <data name="AssignmentUntil" xml:space="preserve">
+    <value>End time shift</value>
+  </data>
+  <data name="ShiftUntilRequired" xml:space="preserve">
+    <value>The end time of a shift is required.</value>
+  </data>
+  <data name="CapacityCycleConfigurationExecutionPeriodInvalid" xml:space="preserve">
+    <value>The execution period exceeds the validity period of this configuration.</value>
+  </data>
+  <data name="CapacityCycleConfigurationAppointmentBookingPeriodInvalid" xml:space="preserve">
+    <value>The appointment booking period exceeds the provisioning period.</value>
+  </data>
+  <data name="CapacityCycleConfigurationExecutionPeriodLength" xml:space="preserve">
+    <value>Execution period </value>
+  </data>
+  <data name="RegionName" xml:space="preserve">
+    <value>Regionaam</value>
+  </data>
+  <data name="AuthenticatedUserLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="ModuleActionName" xml:space="preserve">
+    <value>Action Name</value>
+  </data>
+  <data name="ModuleName" xml:space="preserve">
+    <value>Module Name</value>
+  </data>
+  <data name="ServiceSpecificationCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="ServiceSpecificationDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="TaskSpecificationCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="TaskSpecificationDescription" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ResultCategoryName" xml:space="preserve">
+    <value>Result Category</value>
+  </data>
+  <data name="ResultCodeCode" xml:space="preserve">
+    <value>Result Code</value>
+  </data>
+  <data name="ResultCodeDescription" xml:space="preserve">
+    <value>Result Description</value>
+  </data>
+  <data name="CommercialName" xml:space="preserve">
+    <value>Commercial Name</value>
+  </data>
+  <data name="ProductCommercialName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="ContactComment" xml:space="preserve">
+    <value>Contact Comment</value>
+  </data>
+  <data name="ContactIsMain" xml:space="preserve">
+    <value>Main Contact</value>
+  </data>
+  <data name="ContactLanguage" xml:space="preserve">
+    <value>Contact Language</value>
+  </data>
+  <data name="ContactToolInfo" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="ContactToolToolValue" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="VisitSignatureName" xml:space="preserve">
+    <value>Signer</value>
+  </data>
+  <data name="VisitSignatureUri" xml:space="preserve">
+    <value>Signature</value>
+  </data>
+  <data name="TechnicianAddressType" xml:space="preserve">
+    <value>TechnicianAddressType</value>
+  </data>
+  <data name="VisitHistoryReason" xml:space="preserve">
+    <value>VisitHistoryReason</value>
+  </data>
+  <data name="AssignmentFromAfterTo" xml:space="preserve">
+    <value>Assignment From After To</value>
+  </data>
+  <data name="AssignmentFromRequired" xml:space="preserve">
+    <value>Assignment From Required</value>
+  </data>
+  <data name="AssignmentUntilRequired" xml:space="preserve">
+    <value>Assignment Until Required</value>
+  </data>
+  <data name="CredentialsLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="CredentialsId" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="CredentialsPasswordHash" xml:space="preserve">
+    <value>Password hash</value>
+  </data>
+  <data name="SkillDefinitionContractModelId" xml:space="preserve">
+    <value>Contract model</value>
+  </data>
+  <data name="SkillDefinitionId" xml:space="preserve">
+    <value>Skill definition id</value>
+  </data>
+  <data name="SkillDefinitionIsCertificationNeeded" xml:space="preserve">
+    <value>Is certification needed</value>
+  </data>
+  <data name="SkillDefinitionName" xml:space="preserve">
+    <value>Skill name</value>
+  </data>
+  <data name="SkillId" xml:space="preserve">
+    <value>Skill Id</value>
+  </data>
+  <data name="SkillIsCertified" xml:space="preserve">
+    <value>IsCertified</value>
+  </data>
+  <data name="SkillProficiency" xml:space="preserve">
+    <value>Proficiency</value>
+  </data>
+  <data name="SkillSkillDefinitionId" xml:space="preserve">
+    <value>Skill definition</value>
+  </data>
+  <data name="SkillTechnicianRoleId" xml:space="preserve">
+    <value>Technician Role</value>
+  </data>
+  <data name="SkillValidFrom" xml:space="preserve">
+    <value>Valid from</value>
+  </data>
+  <data name="SkillValidUntil" xml:space="preserve">
+    <value>Valid until</value>
+  </data>
+  <data name="TechnicianAddressAddressId" xml:space="preserve">
+    <value>Technician address</value>
+  </data>
+  <data name="TechnicianAddressId" xml:space="preserve">
+    <value>Technician address id</value>
+  </data>
+  <data name="TechnicianAddressIsDefault" xml:space="preserve">
+    <value>Is default</value>
+  </data>
+  <data name="TechnicianAddressTechnicianId" xml:space="preserve">
+    <value>Technician</value>
+  </data>
+  <data name="TechnicianAddressValidFrom" xml:space="preserve">
+    <value>Valid from</value>
+  </data>
+  <data name="TechnicianAddressValidUntil" xml:space="preserve">
+    <value>Valid until</value>
+  </data>
+  <data name="WorkDayDate" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="WorkDayEndTechnicianAddressId" xml:space="preserve">
+    <value>End address</value>
+  </data>
+  <data name="WorkDayId" xml:space="preserve">
+    <value>Work day id</value>
+  </data>
+  <data name="WorkDayShiftId" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="WorkDayTechnicianAddressId" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="WorkDayTechnicianId" xml:space="preserve">
+    <value>Technician</value>
+  </data>
+  <data name="CapacityRequestDisplayHoursRequested" xml:space="preserve">
+    <value>{0} hours</value>
+  </data>
+  <data name="CapacityRequestDisplayTechniciansRequested" xml:space="preserve">
+    <value>{0} technicians</value>
+  </data>
+  <data name="WorkSpecificationWithScheduleMode" xml:space="preserve">
+    <value>Schedule mode</value>
+  </data>
+  <data name="ResultCodeOutcomeAbort" xml:space="preserve">
+    <value>Abort</value>
+  </data>
+  <data name="ResultCodeOutcomeDone" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="ResultCodeOutcomeRedo" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="AttributeGroupName" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="VisitPlannedEndRequired" xml:space="preserve">
+    <value>The planned end is required.</value>
+  </data>
+  <data name="VisitPlannedStartBeforeEnd" xml:space="preserve">
+    <value>The planned end shoud be set after the planned start.</value>
+  </data>
+  <data name="VisitPlannedStartRequired" xml:space="preserve">
+    <value>The planned start is required.</value>
+  </data>
+  <data name="VisitWindowEnd" xml:space="preserve">
+    <value>Window end</value>
+  </data>
+  <data name="VisitWindowEndRequired" xml:space="preserve">
+    <value>The window end is required.</value>
+  </data>
+  <data name="VisitWindowStart" xml:space="preserve">
+    <value>Window start</value>
+  </data>
+  <data name="VisitWindowStartBeforeEnd" xml:space="preserve">
+    <value>The window end shoud be set after the window start.</value>
+  </data>
+  <data name="VisitWindowStartRequired" xml:space="preserve">
+    <value>The window start is required.</value>
+  </data>
+  <data name="LocationLongitudeRequired" xml:space="preserve">
+    <value>The longitude of the location is required.</value>
+  </data>
+  <data name="ContactLanguageRequired" xml:space="preserve">
+    <value>The language is required.</value>
+  </data>
+  <data name="AttachmentName" xml:space="preserve">
+    <value>Attachment name</value>
+  </data>
+  <data name="AttachmentNameRequired" xml:space="preserve">
+    <value>The attachment name is required.</value>
+  </data>
+  <data name="AttachmentType" xml:space="preserve">
+    <value>Attachment type</value>
+  </data>
+  <data name="AttachmentTypeRequired" xml:space="preserve">
+    <value>The attachment type is required.</value>
+  </data>
+  <data name="AttachmentTitleExecutor" xml:space="preserve">
+    <value>Attached by {0}  {1} on {2}.</value>
+  </data>
+  <data name="VisitLabelId" xml:space="preserve">
+    <value>Id:</value>
+  </data>
+  <data name="VisitNoResultCodeOnEndedStatus" xml:space="preserve">
+    <value>Resultcode not supplied</value>
+  </data>
+  <data name="CheckPlannedStartOnCommit" xml:space="preserve">
+    <value>The plan start is required when visit is committed.</value>
+  </data>
+  <data name="WorkOrderResultCodeRequired" xml:space="preserve">
+    <value>Vist must have a Result Code when in Ended state.</value>
+  </data>
+  <data name="ResultCodeOutcomeNotSet" xml:space="preserve">
+    <value>Not set</value>
+  </data>
+  <data name="UnitTypeKg" xml:space="preserve">
+    <value>Kg</value>
+  </data>
+  <data name="UnitTypeLiter" xml:space="preserve">
+    <value>Liter</value>
+  </data>
+  <data name="UnitTypeMeter" xml:space="preserve">
+    <value>Meter</value>
+  </data>
+  <data name="UnitTypePieces" xml:space="preserve">
+    <value>Pieces</value>
+  </data>
+  <data name="UnitTypeMinutes" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="CallAgentRemarkResultCodeRequired" xml:space="preserve">
+    <value>The outcome of the customer call is required.</value>
+  </data>
+  <data name="BookingRemarkResultCodeId" xml:space="preserve">
+    <value>Result Code</value>
+  </data>
+  <data name="ContactPrefix" xml:space="preserve">
+    <value>Salutation</value>
+  </data>
+  <data name="ContactPrefixRange" xml:space="preserve">
+    <value>The last salutation of the contact can contain maximum 150 characters.</value>
+  </data>
+  <data name="ContractModelTimeZoneId" xml:space="preserve">
+    <value>TimeZone</value>
+  </data>
+  <data name="DisplayAuditMessage" xml:space="preserve">
+    <value>Appointment booking by {0} on {1} at {2}.</value>
+  </data>
+</root>

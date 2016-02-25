@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{006FB1DA-4FA4-40EA-9518-1F9B0CF98E13}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ServiceCruiser.Model.Entities</RootNamespace>
+    <AssemblyName>ServiceCruiser.Model.Entities</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile47</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dev|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Dev\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Qa|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Qa\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SeedingBuild|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\SeedingBuild\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Contracts\PhotoType.cs" />
+    <Compile Include="Extensions\BaseEntityExtensions.cs" />
+    <Compile Include="FieldServices\BookingRemark.cs" />
+    <Compile Include="Contracts\AppointmentWindow.cs" />
+    <Compile Include="Capacities\CapacityCycle.cs" />
+    <Compile Include="Capacities\CapacityCycleConfiguration.cs" />
+    <Compile Include="Capacities\CapacityDistribution.cs" />
+    <Compile Include="Capacities\CapacityRequest.cs" />
+    <Compile Include="Capacities\Assignment.cs" />
+    <Compile Include="Capacities\ContractRoleType.cs" />
+    <Compile Include="Capacities\ShiftType.cs" />
+    <Compile Include="Contracts\AttributeGroup.cs" />
+    <Compile Include="Contracts\AttributeRule.cs" />
+    <Compile Include="Contracts\AttributeRuleType.cs" />
+    <Compile Include="Contracts\AttributeSpec.cs" />
+    <Compile Include="Contracts\AttributeSpecBool.cs" />
+    <Compile Include="Contracts\AttributeSpecDateTime.cs" />
+    <Compile Include="Contracts\AttributeSpecInt.cs" />
+    <Compile Include="Contracts\AttributeSpecSelect.cs" />
+    <Compile Include="Contracts\AttributeSpecText.cs" />
+    <Compile Include="Contracts\AttributeSpecType.cs" />
+    <Compile Include="Contracts\CompanyType.cs" />
+    <Compile Include="Contracts\DseInfo.cs" />
+    <Compile Include="Contracts\DseSpecificationBase.cs" />
+    <Compile Include="Contracts\DseSpecificationPower.cs" />
+    <Compile Include="Contracts\RmaReason.cs" />
+    <Compile Include="Contracts\ScheduleModeType.cs" />
+    <Compile Include="Contracts\TravelTime.cs" />
+    <Compile Include="Contracts\WorkLogoffRule.cs" />
+    <Compile Include="Contracts\ZipCode.cs" />
+    <Compile Include="Converters\CustomJsonCreateConverter.cs" />
+    <Compile Include="FieldServices\Attachment.cs" />
+    <Compile Include="FieldServices\AttributeValueWrap.cs" />
+    <Compile Include="FieldServices\AttributeValueWrapBool.cs" />
+    <Compile Include="FieldServices\AttributeValueWrapDateTime.cs" />
+    <Compile Include="FieldServices\AttributeValueWrapInt.cs" />
+    <Compile Include="FieldServices\AttributeValueWrapSelect.cs" />
+    <Compile Include="FieldServices\AttributeValueWrapText.cs" />
+    <Compile Include="FieldServices\AttributeValueWrapType.cs" />
+    <Compile Include="FieldServices\CapacityVersionType.cs" />
+    <Compile Include="FieldServices\DseSla.cs" />
+    <Compile Include="Contracts\GrabMaterial.cs" />
+    <Compile Include="FieldServices\Exchange.cs" />
+    <Compile Include="FieldServices\ExtraOrder.cs" />
+    <Compile Include="FieldServices\ExtraOrderLogoff.cs" />
+    <Compile Include="FieldServices\IAttributeContainer.cs" />
+    <Compile Include="Capacities\ResourceShift.cs" />
+    <Compile Include="Capacities\TimeUnitsType.cs" />
+    <Compile Include="Contracts\ThemeColorType.cs" />
+    <Compile Include="Contracts\ContractModel.cs" />
+    <Compile Include="Capacities\ContractShift.cs" />
+    <Compile Include="Contracts\ContractSubscription.cs" />
+    <Compile Include="Contracts\Company.cs" />
+    <Compile Include="Contracts\ContractingCompany.cs" />
+    <Compile Include="Contracts\ContractorCompany.cs" />
+    <Compile Include="Contracts\TaskSpecification.cs" />
+    <Compile Include="FieldServices\ContactTool.cs" />
+    <Compile Include="FieldServices\ContactToolType.cs" />
+    <Compile Include="FieldServices\Customer.cs" />
+    <Compile Include="FieldServices\ILoggedPart.cs" />
+    <Compile Include="Contracts\Part.cs" />
+    <Compile Include="Contracts\PartCategory.cs" />
+    <Compile Include="Contracts\ItemPackage.cs" />
+    <Compile Include="Contracts\PartSupplier.cs" />
+    <Compile Include="Contracts\PartType.cs" />
+    <Compile Include="FieldServices\InVanDelivery.cs" />
+    <Compile Include="FieldServices\InventoryAction.cs" />
+    <Compile Include="FieldServices\InventoryActionType.cs" />
+    <Compile Include="FieldServices\InventoryLocation.cs" />
+    <Compile Include="FieldServices\InventoryLocationType.cs" />
+    <Compile Include="FieldServices\InventoryLogoff.cs" />
+    <Compile Include="FieldServices\ITrackedPart.cs" />
+    <Compile Include="Contracts\MaterialGroup.cs" />
+    <Compile Include="Contracts\OnsiteService.cs" />
+    <Compile Include="Contracts\PartNoAlias.cs" />
+    <Compile Include="Contracts\Photo.cs" />
+    <Compile Include="FieldServices\LocationInventoryLoc.cs" />
+    <Compile Include="FieldServices\LogOff.cs" />
+    <Compile Include="FieldServices\LogOffType.cs" />
+    <Compile Include="FieldServices\PlanningOverrideType.cs" />
+    <Compile Include="FieldServices\Region.cs" />
+    <Compile Include="FieldServices\AttachmentType.cs" />
+    <Compile Include="FieldServices\RemarkType.cs" />
+    <Compile Include="FieldServices\ResultCategory.cs" />
+    <Compile Include="FieldServices\ResultCode.cs" />
+    <Compile Include="FieldServices\ResultCodeOutcomeType.cs" />
+    <Compile Include="Contracts\Tool.cs" />
+    <Compile Include="FieldServices\Rma.cs" />
+    <Compile Include="FieldServices\TaskInfo.cs" />
+    <Compile Include="FieldServices\Transporter.cs" />
+    <Compile Include="FieldServices\UnitType.cs" />
+    <Compile Include="Contracts\ValueMaterial.cs" />
+    <Compile Include="FieldServices\VanInventoryLoc.cs" />
+    <Compile Include="FieldServices\VisiSuperStateType.cs" />
+    <Compile Include="FieldServices\VisitSignatureAttachment.cs" />
+    <Compile Include="FieldServices\Warehouse.cs" />
+    <Compile Include="FieldServices\WorkOrderAttachment.cs" />
+    <Compile Include="FieldServices\ServiceOrderAttachment.cs" />
+    <Compile Include="FieldServices\ServiceOrderHistory.cs" />
+    <Compile Include="FieldServices\VisitHistory.cs" />
+    <Compile Include="FieldServices\WorkOrderHistory.cs" />
+    <Compile Include="FieldServices\ServiceStatusType.cs" />
+    <Compile Include="FieldServices\Task.cs" />
+    <Compile Include="FieldServices\TaskStatusType.cs" />
+    <Compile Include="FieldServices\Visit.cs" />
+    <Compile Include="FieldServices\Address.cs" />
+    <Compile Include="FieldServices\Contact.cs" />
+    <Compile Include="FieldServices\Location.cs" />
+    <Compile Include="FieldServices\Remark.cs" />
+    <Compile Include="FieldServices\ServiceOrder.cs" />
+    <Compile Include="FieldServices\ServiceOrderRemark.cs" />
+    <Compile Include="Contracts\ServiceSpecification.cs" />
+    <Compile Include="FieldServices\VisitRemark.cs" />
+    <Compile Include="FieldServices\VisitStatusType.cs" />
+    <Compile Include="FieldServices\WorkOrderRemark.cs" />
+    <Compile Include="FieldServices\WorkOrder.cs" />
+    <Compile Include="Capacities\Shift.cs" />
+    <Compile Include="Contracts\WorkSpecification.cs" />
+    <Compile Include="FieldServices\WorkStatusType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\IAttributeGroupRepository.cs" />
+    <Compile Include="Repositories\IContractModelRepository.cs" />
+    <Compile Include="Repositories\IModuleRepository.cs" />
+    <Compile Include="Repositories\IProductRepository.cs" />
+    <Compile Include="Repositories\IServiceSpecificationRepository.cs" />
+    <Compile Include="Repositories\IWorkSpecificationRepository.cs" />
+    <Compile Include="Repositories\ITaskSpecificationRepository.cs" />
+    <Compile Include="Repositories\IUserRepository.cs" />
+    <Compile Include="Resources\Translations.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Translations.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Technicians\DseTechnicianInfo.cs" />
+    <Compile Include="Technicians\Skill.cs" />
+    <Compile Include="Technicians\SkillDefinition.cs" />
+    <Compile Include="Technicians\Unavailability.cs" />
+    <Compile Include="Technicians\Technician.cs" />
+    <Compile Include="Technicians\TechnicianAddress.cs" />
+    <Compile Include="Technicians\TechnicianRole.cs" />
+    <Compile Include="Technicians\WorkDay.cs" />
+    <Compile Include="TimeUnit.cs" />
+    <Compile Include="Users\CredentialType.cs" />
+    <Compile Include="Users\LicensingType.cs" />
+    <Compile Include="Users\Module.cs" />
+    <Compile Include="Users\ModuleAction.cs" />
+    <Compile Include="Users\ModuleType.cs" />
+    <Compile Include="Users\Permission.cs" />
+    <Compile Include="Users\Product.cs" />
+    <Compile Include="Users\RoleType.cs" />
+    <Compile Include="Users\UserPreference.cs" />
+    <Compile Include="Users\UserRoleType.cs" />
+    <Compile Include="Users\User.cs" />
+    <Compile Include="Users\Credentials.cs" />
+    <Compile Include="Users\UserRole.cs" />
+    <Compile Include="Users\UserType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServiceCruiser.Model.Entities.Core\ServiceCruiser.Model.Entities.Core.csproj">
+      <Project>{69cfd1fe-291d-4ef1-8233-3783b0095747}</Project>
+      <Name>ServiceCruiser.Model.Entities.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceCruiser.Model.IRepository\ServiceCruiser.Model.IRepository.csproj">
+      <Project>{d3cd594a-56cf-44b1-908b-5d91cc6ea0d0}</Project>
+      <Name>ServiceCruiser.Model.IRepository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceCruiser.Model.Validations.Core\ServiceCruiser.Model.Validations.Core.csproj">
+      <Project>{e99b94e4-cde7-49c5-9c97-04b3bcb2d82a}</Project>
+      <Name>ServiceCruiser.Model.Validations.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETPortable\v4.0\Profile\Profile47\System.Windows.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Translations.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Translations.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

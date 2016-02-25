@@ -1,0 +1,63 @@
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+
+namespace ServiceCruiser.Model.Validations.Core.Validators
+{
+    /// <summary>
+    /// Describes a <see cref="ValueValidator"/>.
+    /// </summary>
+    /// <seealso cref="ValueValidator"/>
+    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field | AttributeTargets.Method | AttributeTargets.Parameter,
+                    AllowMultiple = true, Inherited = false)]
+    public abstract partial class ValueValidatorAttribute : ValidatorAttribute
+    {
+        private bool negated;
+
+        /// <summary>
+        /// <para>Initializes a new instance of the <see cref="ValueValidatorAttribute"/> class.</para>
+        /// </summary>
+        protected ValueValidatorAttribute()
+        { }
+
+        /// <summary>
+        /// Gets or sets the flag indicating if the validator to create should be negated.
+        /// </summary>
+        public bool Negated
+        {
+            get { return negated; }
+            set { negated = value; }
+        }
+
+        /// <summary>
+        /// Determines whether the specified value is valid.
+        /// </summary>
+        /// <param name="value">The value to validated.</param>
+        /// <param name="context">The validation context.</param>
+        protected override System.ComponentModel.DataAnnotations.ValidationResult IsValid(object value, ValidationContext context)
+        {
+            if (!string.IsNullOrEmpty(this.Ruleset))
+            {
+                return System.ComponentModel.DataAnnotations.ValidationResult.Success;
+            }
+
+            var validator = DoCreateValidator(null, null, null, null);
+            var results = validator.Validate(value);
+
+            return results.IsValid
+                    ? System.ComponentModel.DataAnnotations.ValidationResult.Success
+                    : new System.ComponentModel.DataAnnotations.ValidationResult(results.First().Message);
+        }
+
+
+        /// <summary>
+        /// Applies formatting to an error message based on the data field where the error occurred. 
+        /// </summary>
+        /// <param name="name">The name of the data field where the error occurred.</param>
+        /// <returns>An instance of the formatted error message.</returns>
+      /*  public string FormatErrorMessage(string name)
+        {
+            return this.CreateValidator(null, null, null, null).GetMessage(null, name);
+        }*/
+    }
+}
